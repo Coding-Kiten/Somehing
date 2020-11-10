@@ -1,31 +1,44 @@
-<script>
-    console.log("I Like Spamming asdfghjkl!1?");
-    var first="Suhaansie";
-    console.log(first);
-    var last="Watada";
-    console.log(last);
-    var full= first.concat(last);
-    console.log(full);
-    var length=full.length;
-    console.log(length);
-    var name_one=("I am a worm. a WORMMMMNMMMMMMM...");
-    name_one.replace("Suhaansie","worm");
-    var replace_name=name_one.replace("Suhaansie","worm");
-    console.log(replace_name);
-    var cap=("SUHAANSIE");
-    console.log(cap);
-    var low=cap.toLowerCase();
-    console.log(low);
-    var smagggg=("watada");
-    console.log(smagggg);
-    var can=smagggg.toUpperCase();
-    console.log(can);
-    var sqr_rt=Math.sqrt(1234800);
-    console.log(sqr_rt);
-    var maxnum=Math.max(4586790123,1234567890);
-    console.log(maxnum);
-    var minnum=Math.min(246135,135246);
-    console.log(minnum);
-    var pwr=Math.pow(214,9);
-    console.log(pwr);
-</script>
+<html>
+
+<head>
+    <title>Someone's thing-a-ma-bob</title>
+</head>
+
+<body>
+    <h1>Dis Is Da Screen</h1>
+    <p id="array_declared"></p>
+    <p id="array_items"></p>
+    <p id="show_numbers"></p>
+    <script>
+        var fruits = ["Mango", "Banana", "Apple"]; 
+        console.log(fruits); 
+        document.getElementById("array_declared").innerHTML = fruits;
+        var hOmE= fruits[1];
+        console.log(hOmE); 
+        fruits.push("Cherry");
+        console.log(fruits);
+        document.getElementById("array_declared").innerHTML = fruits;
+        var array_value="";
+         for (i=0;i<fruits.length;i++)
+         { console.log(fruits[i]);
+          array_value=array_value+fruits[i]+ "<br>";
+           }
+            document.getElementById("array_items").innerHTML=array_value;
+             var somethingyyyy=fruits.length;
+             console.log(somethingyyyy);
+             var numbers=["45","9","87","26","56"];
+              console.log(numbers);
+             document.getElementById("show_numbers").innerHTML=numbers;
+              var max_no= Math.max.apply(Math,numbers);
+               console.log(max_no);
+             var min_no= Math.min.apply(Math,numbers);
+              console.log(min_no);
+             numbers.sort();
+             console.log(numbers);
+             numbers.reverse();
+             console.log(numbers);
+    </script>
+
+</body>
+
+</html>
